@@ -21,15 +21,15 @@
     <nav class="site-nav-outer">
         <input type="checkbox" name="tandc" id="nav-click" value="true">
         <ul class="navigation">
-            <li class="nav-item nav1"><a href="">Home</a></li>
+            <li class="nav-item nav1"><a href="#intro">Home</a></li>
             <li><img src="./img/logo/ALMAoscura.png" alt="" class="logoNAV"></li>
-            <li class="nav-item nav2"><a href="">About</a></li>
-            <li class="nav-item nav2"><a href="">Partners</a></li>
-            <li class="nav-item nav2"><a href="">Contact</a></li>
+            <li class="nav-item nav2"><a href="#about">About</a></li>
+            <li class="nav-item nav2"><a href="#partners">Partners</a></li>
+            <li class="nav-item nav2"><a href="#contact">Contact</a></li>
             
         </ul>
     </nav>
-    <section>
+    <section class="conteinerINTRO" id="intro">
         <div id="Awesome" class="anim750">
             <div class="reveal circle_wrapper">
                 <div class="circle">ALMACOCINAERA</div>
@@ -46,21 +46,25 @@
                 </div>
             </div>                      
         </div>
+        <div class="exeimg">
+            <img src="" alt="">
+        </div>
     </section>
     <div class="linea"></div>
+    <div class="linea3"></div>
     <section>
         <h1 class="txtCenter">Sobre nosotros</h1>
         <p class="txtCenter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, temporibus, placeat debitis quod exercitationem necessitatibus a deleniti atque qui fugit earum officiis aut neque commodi aliquam sed quas? Quam, inventore.</p>
     </section>
     <div class="linea"></div>
-    <section>
+    <div class="linea3"></div>
+    <section id="about">
         <h2 class="txtCenter">Nuestros servicios</h2>
         <div>
             <div class="linea2"></div>
-            <div>
-                <h3> HOTELES, RESTAURANTES, BANQUETES DE EVENTOS</h3>
-                <img src="" alt="">
-                <h4 class="txtLeft">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, atque?</h4>
+            <div class="conteinerSER">
+                <h3 class="subSer"> HOTELES, RESTAURANTES, BANQUETES DE EVENTOS</h3>
+                <div class="exeimg"><img src="" alt=""></div>
                 <div class="btnBody">
                     <a href="#" class="descargarbtn">
                         <span></span>
@@ -70,23 +74,43 @@
                         Dowload
                     </a>
                 </div>
+                <h4 class="txtLeft">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, atque?</h4>
             </div>
             <div class="linea2"></div>
-            <div>
-                <h3>MAYORISTAS</h3>
-                <img src="" alt="">
+            <div class="conteinerSER">
+                <h3 class="subSer">MAYORISTAS</h3>
+                <div class="exeimg"><img src="" alt=""></div>
+                <div class="btnBody">
+                    <a href="#" class="descargarbtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Dowload
+                    </a>
+                </div>
                 <h4 class="txtLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, temporibus.</h4>
             </div>
             <div class="linea2"></div>
-            <div>
-                <H3>RETAIL</H3>
-                <img src="" alt="">
+            <div class="conteinerSER">
+                <H3 class="subSer">RETAIL</H3>
+                <div class="exeimg"><img src="" alt=""></div>
+                <div class="btnBody">
+                    <a href="#" class="descargarbtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Dowload
+                    </a>
+                </div>
                 <h4 class="txtLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis.</h4>
             </div>
         </div>
     </section>
+    <div class="linea"></div>
     <div class="linea3"></div>
-    <section class="clients">
+    <section class="clients" id="partners">
         <div class="slider">
             <div class="slide-track">
               <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" alt="">
@@ -116,7 +140,7 @@
     <section></section>
     <div class="linea3"></div>
     <section class="contenedoR">
-        <section class="bodyREDES">
+        <section class="bodyREDES" id="contact">
             <div class="icon">
                 <div class="op icon__facebook">
                   <ion-icon class="fa fa-facebook"></ion-icon>
