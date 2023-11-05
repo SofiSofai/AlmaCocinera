@@ -120,6 +120,10 @@ label{position:relative;}
 .conteinerINTRO{
     height: 100vh;
 }
+.videoIntro{
+    height: 95%;
+    width: 100%;
+}
 .introSobre{
     padding-left: 15%;
     padding-right: 15%;
