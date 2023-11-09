@@ -9,8 +9,8 @@ require 'PHPMailer-master/src/SMTP.php';
 
 // Configuración de OAuth 2.0
 $oauthConfig = [
-    'clientId' => '1073857541088-lkj8v46ljgebfmqr4ihags0b5usrc30b.apps.googleusercontent.com',
-    'clientSecret' => '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',
+    'clientId' => '',
+    'clientSecret' => '',
     'redirectUri' => 'http://localhost/Yeka/get_refresh_token.php',
     'host' => 'https://accounts.google.com',
 ];
