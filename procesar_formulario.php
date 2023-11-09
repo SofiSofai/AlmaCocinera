@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->AuthType = 'XOAUTH2';
         $mail->oauthUserEmail = 'yekacomidas@gmail.com';
         $mail->oauthClientId = '1073857541088-lkj8v46ljgebfmqr4ihags0b5usrc30b.apps.googleusercontent.com';
-        $mail->oauthClientSecret = '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';
-        $mail->oauthRefreshToken = 'tu_refresh_token';
+        $mail->oauthClientSecret = '';
+        $mail->oauthRefreshToken = '';
 
         // Configuración de parámetros de correo
         $mail->setFrom('tucorreo@gmail.com', 'Tu Nombre');
