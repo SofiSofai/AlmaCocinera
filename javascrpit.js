@@ -1,1 +1,0 @@
-document.getElementById("form1").addEventListener
