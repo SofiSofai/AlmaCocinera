@@ -45,6 +45,7 @@
 }
 
 /*Nav*/
+<<<<<<< HEAD
 .navigation {
     display: grid;
     position: fixed;
@@ -66,6 +67,28 @@
     height: 40px;
     position: fixed;
     z-index: 1;
+=======
+.navigation{
+  display: grid;
+  position: fixed;
+  padding-top:10px;
+  padding-left:20px;
+  padding-right:20px;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  width:100%;
+  color:#555;
+  font-family:'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+.site-nav-outer{
+  background:#fff;
+  box-shadow:0 2px 2px #ccc;
+  width:100%;
+  height:40px;
+  position: fixed;
+  z-index: 1;
+>>>>>>> 0f09e7fc55b40b9932e595c3c7efe557936b68f2
 
 }
 
@@ -170,8 +193,16 @@ label {
 .conteinerINTRO {
     height: 100vh;
 }
+<<<<<<< HEAD
 
 .introSobre {
+=======
+.videoIntro{
+    height: 95%;
+    width: 100%;
+}
+.introSobre{
+>>>>>>> 0f09e7fc55b40b9932e595c3c7efe557936b68f2
     padding-left: 15%;
     padding-right: 15%;
     margin-bottom: 30px;
@@ -185,9 +216,7 @@ label {
 .conteinerSER {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 0.5fr;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
     justify-items: stretch;
     align-items: stretch;
     padding-right: 15px;
@@ -198,7 +227,7 @@ label {
 .subServicios {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 0.5fr;
+    grid-template-rows: 1fr 3fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-items: stretch;
@@ -210,7 +239,30 @@ label {
     justify-self: center;
     padding-bottom: 25px;
 }
-
+.contenedorIMGserv{
+    width: 90%;
+    height: 100%;
+    background-image: url(../img/hotel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20%;
+}
+.contenedorIMGserv2{
+    width: 90%;
+    height: 100%;
+    background-image: url(../img/mayorista.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 25%;
+}
+.contenedorIMGserv3{
+    width: 90%;
+    height: 100%;
+    background-image: url(../img/retail.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 25%;
+}
 /*btn de descarga*/
 .btnBody {
     display: flex;
@@ -218,6 +270,7 @@ label {
     align-items: center;
     font-weight: bold;
     padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .descargarbtn {
@@ -340,7 +393,9 @@ label {
         bottom: 100%;
     }
 }
-
+.separar{
+    margin-top: 65px;
+}
 /*Clientes*/
 .clients {
     min-height: 50vh;
@@ -616,6 +671,7 @@ footer .bottom_content section {
     color: rgba(255, 255, 255, 0.7);
     transition: 0.5s;
 }
+<<<<<<< HEAD
 
 /*Footer responsive*/
 @media (max-width:820px) {
@@ -643,4 +699,23 @@ footer .bottom_content section {
     }
 
    
+=======
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+    width: 60px;
+    height: 60px;
+    background-color: #a5a5a5;
+    border-radius: 50%;
+    border-color: #2e241b solid;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    z-index: 999;
+}
+.fa-whatsapp{
+    margin-top: 22%;
+>>>>>>> 0f09e7fc55b40b9932e595c3c7efe557936b68f2
 }
