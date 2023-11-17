@@ -4,24 +4,25 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
+require 'config.php'; // Incluye el archivo de configuración
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    // Verificar si la dirección de correo electrónico es válida
+    // Validar la dirección de correo electrónico
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $mail = new PHPMailer(true);
 
         $mail->isSMTP();
         $mail->SMTPAuth = true;
 
-        $mail->Host = "mail.estacionkm325.com.ar";
+        $mail->Host = SMTP_HOST;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port = 465;
-        $mail->Username = "info@estacionkm325.com.ar";
-        $mail->Password = "infoestacionkm325";
+        $mail->Port = SMTP_PORT;
+        $mail->Username = SMTP_USERNAME;
+        $mail->Password = SMTP_PASSWORD;
 
         $mail->setFrom($email, $name);
         $mail->addAddress("info@estacionkm325.com.ar");
