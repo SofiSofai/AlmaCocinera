@@ -75,9 +75,10 @@ label{position:relative;}
 }
 .nav2{
     justify-self: end;
+    align-self: end;
 }
 .logoNAV{
-    height: 25px;
+    height: 2.4rem;
     width: auto;
 }
 
@@ -106,9 +107,9 @@ label{position:relative;}
     width: 90%;
     margin: 0 auto;
     max-width: 80rem;
-  }
+}
   
-  .cols{
+.cols{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -117,24 +118,24 @@ label{position:relative;}
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
+}
   
-  .col{
+.col{
     width: calc(25% - 2rem);
     margin: 1rem;
     cursor: pointer;
-  }
+}
   
-  .containerSER{
+.containerSER{
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
       -webkit-perspective: 1000px;
               perspective: 1000px;
-  }
+}
   
-  .front{
+.front{
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158);
     border-radius: 10px;
       background-position: center;
       -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -148,11 +149,11 @@ label{position:relative;}
       min-height: 280px;
       height: auto;
       border-radius: 10px;
-      color: #fff;
+      color: #2e241bcb;
       font-size: 1.5rem;
-  }
+}
   
-  .front:after{
+.front:after{
       position: absolute;
       top: 0;
       left: 0;
@@ -162,13 +163,13 @@ label{position:relative;}
       content: '';
       display: block;
       opacity: .6;
-      background-color: #ffffff5b;
+      background-color: #ffffffc4;
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
       border-radius: 10px;
-  }
+}
 
-  .inner{
+.inner{
       -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
               transform: translateY(-50%) translateZ(60px) scale(0.94);
       top: 50%;
@@ -182,7 +183,7 @@ label{position:relative;}
       -webkit-perspective: inherit;
               perspective: inherit;
       z-index: 2;
-  }
+}
 
 .containerSER{
     transition: all 0.8s ease;
@@ -192,18 +193,19 @@ label{position:relative;}
     filter: brightness(50%);
 }
   
-  .front .inner p{
+.front .inner p{
     font-size: 2rem;
+    font-weight:500;
     margin-bottom: 2rem;
     position: relative;
     color: #2e241b;
-  }
+}
 
-  .front .inner span{
+.front .inner span{
     color: #2e241b;
     font-family: 'Montserrat';
     font-weight: 300;
-  }
+}
   
   @media screen and (max-width: 64rem){
     .col{
@@ -299,6 +301,9 @@ label{position:relative;}
 }
 
 /*formulario*/
+.gap2{
+    margin-top: 8%;
+}
 .bodyForm{    
     height: 100vh;
     background-color: #55504C;
