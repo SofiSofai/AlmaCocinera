@@ -578,6 +578,14 @@ footer .bottom_content section{
 }
 /*Responsive Celular*/
 @media only screen and (max-width: 580px) {
+    .nav2{
+        font-size: medium;
+    }
+    .logoNav{
+        height: 1.8rem;
+        width: auto;
+    }
+
     .videoIntro{
         display: none;
     }
@@ -592,9 +600,15 @@ footer .bottom_content section{
     .col{
         width: 100%;
         margin: 0 0 2rem 0;
-      }
+    }
+
+    .clients{
+        width: 100%;
+        height: auto;
+    }
     .slider .slide-track {
         display: flex;
+        position: absolute;
         animation: scroll 35s linear infinite;
         -webkit-animation: scroll 35s linear infinite;
         width: calc(15rem * 2);
