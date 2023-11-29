@@ -60,7 +60,8 @@ label{position:relative;}
 
 .nav-item{
     list-style:none;
-    padding:5px;}
+    padding:5px;
+}
 
 .nav-item:hover{
   border-bottom: 3px solid #55504C;
@@ -90,7 +91,7 @@ label{position:relative;}
     height: 95%;
     width: 100%;
 }
-.videoIntroMobile{
+.videoMobile{
     display: none;
 }
 .introSobre{
@@ -245,6 +246,7 @@ label{position:relative;}
       hsla(0, 0%, 96.9%, 0),
       hsla(0, 0%, 96.9%, 0.99) 99%
     );
+    overflow-x: hidden;
 }
 .slider .slide-track {
     display: flex;
@@ -272,6 +274,7 @@ label{position:relative;}
     width: 10rem;
     filter: brightness(0) saturate(100%);
     opacity: 0.25;
+    overflow-x: hidden;
 }  
 @keyframes scroll {
     0% {
@@ -545,20 +548,27 @@ footer .bottom_content section{
 /*nav responsive*/
 @media only screen and (max-width:650px){
     .navigation{
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         position:absolute;
         top:1.75rem;
-        width:100%;
         text-align:center;
-        padding:0;}
-    .nav-item a{color:#55504C;}
-    .nav-item{border-bottom:1px solid rgba(0, 0, 0, .1);}
-    .nav-item:hover{background:#55504C;border-bottom: 1px solid rgba(0, 0, 0, .1);}
-    .nav-item:last-child{border-bottom:0;}
-    .site-nav-outer{width:100%;height:1.75rem;}
+        padding:0;
+    }
+    .nav-item{
+        border-bottom:1px solid rgba(0, 0, 0, .1);
+    }
+    .nav-item:hover{
+        border-bottom: 1px solid #55504c;
+    }
+    .nav-item:last-child{
+        border-bottom:0;
+    }
+    .site-nav-outer{
+        width:100%;
+        height:1.75rem;
+    }
     #nav-click:checked ~ .navigation{display:none;}
-    .nav-button{display:block;}
+    /* .nav-button{display:block;} */
+    
     .conteinerSER{
         display: grid;
         grid-template-columns: 3fr;
@@ -571,15 +581,19 @@ footer .bottom_content section{
     .videoIntro{
         display: none;
     }
-    .videoIntroMobile{
+    .videoMobile{
         height: 95%;
         width: 100%;
+    }
+
+    .cols{
+        flex-direction: column;
     }
     .col{
         width: 100%;
         margin: 0 0 2rem 0;
       }
-    .slide-track {
+    .slider .slide-track {
         display: flex;
         animation: scroll 35s linear infinite;
         -webkit-animation: scroll 35s linear infinite;
