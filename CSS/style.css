@@ -569,6 +569,9 @@ footer .bottom_content section{
     #nav-click:checked ~ .navigation{display:none;}
     /* .nav-button{display:block;} */
     
+    .fondoSERVICIOS{
+        height: max-content;
+    }
     .conteinerSER{
         display: grid;
         grid-template-columns: 3fr;
@@ -579,7 +582,7 @@ footer .bottom_content section{
 /*Responsive Celular*/
 @media only screen and (max-width: 580px) {
     .nav2{
-        font-size: medium;
+        font-size:small;
     }
     .logoNav{
         height: 1.8rem;
@@ -590,7 +593,8 @@ footer .bottom_content section{
         display: none;
     }
     .videoMobile{
-        height: 95%;
+        display: block;
+        height: 100%;
         width: 100%;
     }
 
