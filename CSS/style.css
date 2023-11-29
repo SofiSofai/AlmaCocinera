@@ -585,16 +585,19 @@ footer .bottom_content section{
         font-size:small;
     }
     .logoNav{
-        height: 1.8rem;
+        height: 1.3rem;
         width: auto;
     }
 
+    .conteinerINTRO{
+        height: 97%;
+    }
     .videoIntro{
         display: none;
     }
     .videoMobile{
         display: block;
-        height: 100%;
+        height: 95%;
         width: 100%;
     }
 
@@ -609,6 +612,7 @@ footer .bottom_content section{
     .clients{
         width: 100%;
         height: auto;
+        overflow-x: hidden;
     }
     .slider .slide-track {
         display: flex;
@@ -616,12 +620,13 @@ footer .bottom_content section{
         animation: scroll 35s linear infinite;
         -webkit-animation: scroll 35s linear infinite;
         width: calc(15rem * 2);
+        overflow-x: hidden;
     }
     #form-div{
         left: 3%;
-        margin-right: 3%;
+        margin-right: 2%;
         width: 88%;
-        margin-left: 0;
+        margin-left: 2%;
         padding-left: 3%;
         padding-right: 3%;
     }
