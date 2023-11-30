@@ -88,7 +88,7 @@ label{position:relative;}
     height: 100vh;
 }
 .videoIntro{
-    height: 95%;
+    height: 99%;
     width: 100%;
 }
 .videoMobile{
@@ -502,6 +502,9 @@ footer .bottom_content section{
 }
 /*Resposive tablet*/
 @media only screen and (max-width:768px){
+    .fondoSERVICIOS{
+        height: max-content;
+    }
     .conteinerSER{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
@@ -581,11 +584,14 @@ footer .bottom_content section{
 }
 /*Responsive Celular*/
 @media only screen and (max-width: 580px) {
+    .nav-item{
+        padding: 1px;
+    }
     .nav2{
         font-size:small;
     }
     .logoNav{
-        height: 1.3rem;
+        height: 1rem;
         width: auto;
     }
 
@@ -597,8 +603,12 @@ footer .bottom_content section{
     }
     .videoMobile{
         display: block;
-        height: 95%;
+        height: 97%;
         width: 100%;
+    }
+
+    .introSobre .introSER{
+        font-size: medium;
     }
 
     .cols{
@@ -615,13 +625,26 @@ footer .bottom_content section{
         overflow-x: hidden;
     }
     .slider .slide-track {
-        display: flex;
         position: absolute;
-        animation: scroll 35s linear infinite;
-        -webkit-animation: scroll 35s linear infinite;
         width: calc(15rem * 2);
         overflow-x: hidden;
     }
+    .slider .slide img {
+        width: 8rem;
+    }
+    @keyframes scroll {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      
+        100% {
+          -webkit-transform: translateX(calc(-15rem * 2));
+          transform: translateX(calc(-15rem * 2));
+        }
+    }
+    
+
     #form-div{
         left: 3%;
         margin-right: 2%;
