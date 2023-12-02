@@ -219,6 +219,7 @@ label{position:relative;}
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 .slider {
     display: flex;
@@ -505,14 +506,20 @@ footer .bottom_content section{
     }
     .conteinerINTRO{
         height: 90%;
-        margin-bottom: 2%;
+        margin-bottom: 6%;
+    }
+    .fondoSERVICIOS{
+        height: 100%;
     }
     .wrapper{
         width: 100%;
         max-width: 90rem;
     }
+    .slider{
+        padding: 5px;
+    }
     .bodyForm{
-        height: max-content;
+        height: 100%;
     }
     #form-div{
         width: 35rem;
@@ -576,7 +583,7 @@ footer .bottom_content section{
         }
     }
     .bodyForm{
-        height: max-content;
+        height: 100%;
     }
     #form-div{
         left: 3%;
@@ -645,7 +652,7 @@ footer .bottom_content section{
     }
 }
 /*Responsive Celular*/
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 600px) {
     .navigation{
         grid-template-columns: 1.5fr 1fr 1fr 1fr;
     }
