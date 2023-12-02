@@ -293,12 +293,14 @@ label{position:relative;}
     margin-top: 8%;
 }
 .bodyForm{    
-    height: 100vh;
+    height:100vh;
     background-color: #55504C;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23777370' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23999694' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23bbb9b7' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23dddcdb' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23FFFFFF' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
     padding-top: 3.12rem;
+    display: flex;
+    justify-content: center;
 }
   
 #feedback-page{
@@ -313,7 +315,6 @@ label{position:relative;}
       padding-bottom:3.125rem;
       width: 450px;
       position: absolute;
-      margin-left: 34%;
       border-radius: 0.5rem;
 }
   
@@ -360,7 +361,7 @@ label{position:relative;}
       background-color:white;
   }
   
-  #button-blue{
+  #button-grey{
       float:left;
       width: 100%;
       border: #fbfbfb solid 4px;
@@ -377,7 +378,7 @@ label{position:relative;}
     font-weight:700;
   }
   
-  #button-blue:hover{
+  #button-grey:hover{
       background-color: rgba(0,0,0,0);
       color: #7b7370;
   }
@@ -495,6 +496,33 @@ footer .bottom_content section{
 }
 
 /*Responsive*/
+@media (max-width: 1920px) and (min-width: 1600px) {
+    .logoNav{
+        height: 3rem;
+    }
+    .nav2{
+        font-size: medium;
+    }
+    .conteinerINTRO{
+        height: 90%;
+        margin-bottom: 2%;
+    }
+    .wrapper{
+        width: 100%;
+        max-width: 90rem;
+    }
+    .bodyForm{
+        height: max-content;
+    }
+    #form-div{
+        width: 35rem;
+    }
+    .feedback-input{
+        font-size: medium;
+        padding: 0.8rem 0.8rem 0.8rem 3.37rem;
+        margin-bottom: 0.62rem;
+    }
+}
 @media screen and (max-width: 64rem){
     .col{
       width: calc(33.333333% - 2rem);
@@ -502,8 +530,17 @@ footer .bottom_content section{
 }
 /*Resposive tablet*/
 @media only screen and (max-width:768px){
+    .videoIntro{
+        display: none;
+    }
+    .videoMobile{
+        display: block;
+        width: 100%;
+        height: max-content;
+    }
     .fondoSERVICIOS{
         height: 100%;
+        margin-bottom: 5%;
     }
     .conteinerSER{
         display: grid;
@@ -538,14 +575,12 @@ footer .bottom_content section{
           transform: translateX(calc(-15rem * 5));
         }
     }
-    
+    .bodyForm{
+        height: max-content;
+    }
     #form-div{
         left: 3%;
-        margin-right: 2%;
-        margin-left: 2%;
         width: 88%;
-        height: 100%;
-        margin-left: 0;
         padding-left: 3%;
         padding-right: 3%;
     }
@@ -570,8 +605,8 @@ footer .bottom_content section{
         display:inline-block;
     }
     .whatsapp-button{
-        width: 1.875rem;
-        height: 1.875rem;
+        width: 2.8rem;
+        height: 2.8rem;
         font-size: medium;
     }
 }
@@ -674,12 +709,9 @@ footer .bottom_content section{
         }
     }
     
-
     #form-div{
         left: 3%;
-        margin-right: 2%;
         width: 88%;
-        margin-left: 2%;
         padding-left: 3%;
         padding-right: 3%;
     }
