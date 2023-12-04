@@ -588,8 +588,7 @@ footer .bottom_content section{
         height: 100vh;
     }
     #form-div{
-        left: 3%;
-        width: 88%;
+        width: 80%;
         padding-left: 3%;
         padding-right: 3%;
     }
@@ -720,8 +719,7 @@ footer .bottom_content section{
     }
     
     #form-div{
-        left: 3%;
-        width: 88%;
+        width: 80%;
         padding-left: 3%;
         padding-right: 3%;
     }
