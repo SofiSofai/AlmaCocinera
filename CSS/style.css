@@ -562,6 +562,9 @@ footer .bottom_content section{
     .col{
         width: calc(50% - 2rem);
     }
+    .front .inner p{
+        font-size: 1.7rem;
+    }
     .front .inner span{
         font-size: 1.7rem;
     }
