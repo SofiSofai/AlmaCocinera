@@ -658,6 +658,9 @@ footer .bottom_content section{
         grid-template-rows: 1fr 1fr 1fr;
         grid-row-gap:5%;
     }
+    .fa-whatsapp{
+        margin-top: 30%;
+    }
 }
 /*Responsive Celular*/
 @media only screen and (max-width: 600px) {
