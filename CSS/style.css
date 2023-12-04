@@ -302,7 +302,6 @@ label{position:relative;}
     padding-top: 3.12rem;
     display: flex;
     justify-content: center;
-    align-content: center;
 }
   
 #feedback-page{
@@ -547,6 +546,10 @@ footer .bottom_content section{
         width: 100%;
         height: max-content;
     }
+    .titulobajada{
+        margin-top: 3%;
+        height: 100%;
+    }
     .fondoSERVICIOS{
         height: 100%;
         margin-bottom: 5%;
@@ -558,6 +561,9 @@ footer .bottom_content section{
     }
     .col{
         width: calc(50% - 2rem);
+    }
+    .front .inner span{
+        font-size: 1.7rem;
     }
 
     .clients{
