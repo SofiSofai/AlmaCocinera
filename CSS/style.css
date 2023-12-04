@@ -302,6 +302,7 @@ label{position:relative;}
     padding-top: 3.12rem;
     display: flex;
     justify-content: center;
+    align-content: center;
 }
   
 #feedback-page{
@@ -510,6 +511,7 @@ footer .bottom_content section{
     }
     .fondoSERVICIOS{
         height: 100%;
+        margin-bottom: 10%;
     }
     .wrapper{
         width: 100%;
@@ -519,7 +521,7 @@ footer .bottom_content section{
         padding: 5px;
     }
     .bodyForm{
-        height: 100%;
+        height: 70vh;
     }
     #form-div{
         width: 35rem;
@@ -583,7 +585,7 @@ footer .bottom_content section{
         }
     }
     .bodyForm{
-        height: 100%;
+        height: 100vh;
     }
     #form-div{
         left: 3%;
@@ -643,6 +645,7 @@ footer .bottom_content section{
     
     .fondoSERVICIOS{
         height: 100%;
+        margin-bottom: 10%;
     }
     .conteinerSER{
         display: grid;
