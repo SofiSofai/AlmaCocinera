@@ -199,13 +199,6 @@ label{position:relative;}
     font-weight: 600;
     font-size: medium;
 }
-
-.front .inner span a{
-    color: #fbfbfb;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size:medium;
-}
   
 /*Clientes*/
 .clients {
@@ -557,6 +550,9 @@ footer .bottom_content section{
     }
     .col{
         width: calc(50% - 2rem);
+    }
+    .inner{
+        margin-top: 14%;
     }
     .front .inner p{
         font-size: 1.7rem;
