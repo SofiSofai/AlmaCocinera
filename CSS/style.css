@@ -525,7 +525,7 @@ footer .bottom_content section{
       width: calc(33.333333% - 2rem);
     }
     .inner{
-        margin-top: 14%;
+        margin-top: 16%;
     }
 }
 /*Resposive tablet*/
@@ -555,7 +555,7 @@ footer .bottom_content section{
         width: calc(50% - 2rem);
     }
     .inner{
-        margin-top: 16%;
+        margin-top: 17%;
     }
     .front .inner p{
         font-size: 1.7rem;
@@ -701,7 +701,7 @@ footer .bottom_content section{
     }
 
     .inner{
-        margin-top: 16%;
+        margin-top: 19%;
     }
 
     .clients{
