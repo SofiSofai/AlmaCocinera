@@ -524,6 +524,9 @@ footer .bottom_content section{
     .col{
       width: calc(33.333333% - 2rem);
     }
+    .inner{
+        margin-top: 14%;
+    }
 }
 /*Resposive tablet*/
 @media only screen and (max-width:768px){
@@ -552,7 +555,7 @@ footer .bottom_content section{
         width: calc(50% - 2rem);
     }
     .inner{
-        margin-top: 14%;
+        margin-top: 16%;
     }
     .front .inner p{
         font-size: 1.7rem;
@@ -695,6 +698,10 @@ footer .bottom_content section{
     .col{
         width: 100%;
         margin: 0 0 2rem 0;
+    }
+
+    .inner{
+        margin-top: 16%;
     }
 
     .clients{
