@@ -41,19 +41,6 @@
 
 }
 
-/* .nav-button{
-  position:absolute;
-  display:none;
-  top:3px;
-  left:5px;
-  z-index:5;
-  font-family: 'Montserrat', sans-serif;
-  color:#fff;
-  background:#55504C;
-  font-weight:bold;
-  padding:2px 6px 1px 6px;
-} */
-
 label{position:relative;}
 
 #nav-click{display:none;}
@@ -181,6 +168,7 @@ label{position:relative;}
       left: 0;
       width: 100%;
       padding: 2rem;
+      margin-top: 12%;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       outline: 1px solid transparent;
@@ -197,18 +185,26 @@ label{position:relative;}
     filter: brightness(50%);
 }
   
-.front .inner p{
+/* .front .inner p{
     font-size: 2rem;
     font-weight:500;
     margin-bottom: 2rem;
     position: relative;
     color: #2e241b;
-}
+} */
 
 .front .inner span{
-    color: #2e241b;
+    color: #fbfbfb;
     font-family: 'Montserrat';
-    font-weight: 300;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.front .inner span a{
+    color: #fbfbfb;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size:medium;
 }
   
 /*Clientes*/
