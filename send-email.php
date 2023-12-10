@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->Password = SMTP_PASSWORD;
 
         $mail->setFrom($email, $name);
-        $mail->addAddress("info@estacionkm325.com.ar");
+        $mail->addAddress("contacto@almacocinera.com");
 
         $mail->Subject = "Contacto";
         $mail->Body = $message;
