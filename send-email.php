@@ -32,13 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->send();
         // Respuesta para el formulario en caso de éxito
         echo json_encode(["status" => "success"]);
-        // Redirigir a la página principal después del éxito
-        header("Location: index.html");
+        // Redirigir a la página principal después del éxito (mediante JavaScript)
+        echo '<script>window.location.href = "index.html";</script>';
         exit();
     } catch (Exception $e) {
         // Respuesta para el formulario en caso de error
         echo json_encode(["status" => "error", "message" => "Error al enviar el correo. Por favor, inténtalo de nuevo más tarde."]);
-    }    
+    }
+} else {
+    // Si el formulario no se envió mediante POST, redirigir a la página principal
+    header("Location: index.html");
+    exit();
 }
 ?>
+
 
