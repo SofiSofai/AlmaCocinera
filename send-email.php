@@ -22,11 +22,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $mail->Username = SMTP_USERNAME;
     $mail->Password = SMTP_PASSWORD;
 
-    $mail->setFrom($email, $name);
+    // Establecer la codificación de caracteres
+    $mail->CharSet = 'UTF-8';
+
+    $mail->setFrom($email, $name, 'UTF-8');
     $mail->addAddress("contacto@almacocinera.com");
 
-    $mail->Subject = "Contacto";
-    $mail->Body = $message;
+    // Codificar el asunto
+    $mail->Subject = "=?UTF-8?B?".base64_encode("Contacto")."?=";
+
+    // Codificar el cuerpo del mensaje
+    $mail->Body = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
 
     try {
         $mail->send();
@@ -45,5 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     exit();
 }
 ?>
+
 
 
